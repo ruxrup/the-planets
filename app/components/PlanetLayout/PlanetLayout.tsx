@@ -1,9 +1,9 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React, { useState } from "react";
 import SectionButton from "./SectionButton";
 import Section from "./Section";
-import { animate, easeInOut, motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 
 export interface planetdata {
   name: string;
@@ -13,7 +13,7 @@ export interface planetdata {
     content: string;
     source: string;
     image: HTMLImageElement;
-    geo: HTMLImageElement;
+    geo: StaticImageData;
   };
   sectionColor: string;
   rotation: string;
